@@ -1,0 +1,153 @@
+@import "./css/utilidades/componentes.css";
+@import "./css/utilidades/tipografia.css";
+* {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+}
+.cabecalho-bg {
+  background-color: black;
+  box-sizing: border-box;
+}
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cabecalho ul {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  position: relative;
+  padding-right: 60px;
+}
+li {
+  list-style: none;
+  padding-right: px;
+}
+.cabecalho li:after {
+  content: "";
+  display: block;
+  max-width: 0%;
+  height: 2px;
+  background-color: aliceblue;
+}
+.cabecalho li:hover:after {
+  content: "";
+  display: block;
+  max-width: 100;
+  height: 2px;
+  background-color: aliceblue;
+  transition-duration: 0.4s;
+}
+.cabecalho img {
+  display: block;
+}
+.cabecalho a {
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+  font-size: 18px;
+  padding: 10px 0px;
+}
+.part1-bg {
+  background-color: black;
+}
+.part1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  height: 580px;
+}
+.part1-conteudo {
+  align-self: end;
+  padding-bottom: 220px;
+}
+.foto1 {
+  max-width: 200%;
+}
+.part1 img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.part1 h1 {
+  padding: 0px;
+  padding-bottom: 32px;
+  display: block;
+}
+.font-1-xxl {
+  color: aliceblue;
+}
+.font-1-m {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.part1 p {
+  margin-bottom: 20px;
+  line-height: 36px;
+}
+.part1 a {
+  padding: 16px 36px;
+  background-image: linear-gradient(#f2a50c, #ffbf00);
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "poppins", sans-serif;
+  color: black;
+}
+.vazio {
+  box-sizing: border-box;
+  height: 116px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+}
+.botao {
+  color: rgb(214, 140, 30);
+}
+.escolha-a-sua {
+  padding-top: 120px;
+}
+.escolha-a-sua h1 {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #111111;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.bicicletas-home img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  min-width: 200px;
+}
+.bicicletas-home {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  max-width: 1400px;
+  gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.bicicletas-home h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #111111;
+  font-size: 2rem;
+  line-height: 38px;
+  padding-top: 16px;
+}
+.bicicletas-home p {
+  color: #595959;
+}
