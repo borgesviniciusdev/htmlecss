@@ -1,7 +1,15 @@
 @import "./css/utilidades/componentes.css";
 @import "./css/utilidades/tipografia.css";
-* {
+@import "./css/utilidades/fontsize.css";
+h1,
+p,
+a,
+h2,
+h3 {
   margin: 0px;
+}
+img {
+  max-width: 100%;
 }
 body {
   margin: 0px;
@@ -36,7 +44,7 @@ li {
 .cabecalho li:hover:after {
   content: "";
   display: block;
-  max-width: 100;
+  max-width: 100%;
   height: 2px;
   background-color: aliceblue;
   transition-duration: 0.4s;
@@ -70,6 +78,8 @@ li {
   max-width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 4px;
+  height: 100%;
   border-radius: 4px;
 }
 .part1 h1 {
@@ -125,6 +135,7 @@ li {
   max-height: 100%;
   object-fit: cover;
   min-width: 200px;
+  border-radius: 4px;
 }
 .bicicletas-home {
   display: grid;
@@ -135,7 +146,7 @@ li {
   gap: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -147,7 +158,104 @@ li {
   font-size: 2rem;
   line-height: 38px;
   padding-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bicicletas-home h2:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background-color: rgb(218, 177, 44);
+  transition: 0.3s;
+}
+.bicicletas-home h2:hover:before {
+  width: 16px;
 }
 .bicicletas-home p {
   color: #595959;
+}
+.part2bg {
+  background-color: #111111;
+  margin-top: 120px;
+  box-sizing: border-box;
+  box-shadow: inset 0 100px white, inset 0 -100px white;
+}
+.part2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.part2-img img {
+  max-width: 100%;
+  height: 100%;
+  object-position: left;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.part2-conteudo a {
+  color: #ffbb00;
+  gap: 30px;
+}
+.part2-conteudo {
+  padding-top: 160px;
+}
+.part2-conteudo h1 {
+  margin-bottom: 30px;
+}
+.part2-conteudo p {
+  margin-bottom: 20px;
+}
+.part2-conteudo h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+.part2-bloco {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 150px;
+  gap: 40px;
+}
+.part2-bloco h2 {
+  text-transform: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.125;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.part2-bloco img {
+  height: 25px;
+}
+.part3 {
+  color: #111111;
+  margin-top: 80px;
+}
+.part3-bg {
+  background-color: white;
+}
+.part3-parceiros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 60px;
+}
+.part3-parceiros li {
+  padding: 30px;
+  display: flex;
+  border-bottom: 2px solid rgb(93, 95, 93);
+  border-right: 2px solid grey;
+}
+.part3-parceiros li:nth-child(4n + 4) {
+  border-right: 2px solid white;
+}
+.part3-parceiros li:nth-child(n + 5) {
+  border-bottom: 2px solid white;
 }
